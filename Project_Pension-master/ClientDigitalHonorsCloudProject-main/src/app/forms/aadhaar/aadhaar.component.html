@@ -1,0 +1,10 @@
+<div class="text-center mb-4"><h1>Process Pension Form</h1></div>
+<div class="externalAlign">
+    
+  <form [formGroup]="aadhaarForm" (ngSubmit)="onSubmit()">
+      <div class="form-outline externalAlign">
+          <app-text-input formControlName="aadhaarNumber" [label]="' Aadhaar Number'" ></app-text-input>
+          <button [disabled]="aadhaarForm.invalid" type="submit" class="btn btn-primary btn-block mb-auto mx-2">Submit</button>
+      </div>
+  </form>
+</div>
